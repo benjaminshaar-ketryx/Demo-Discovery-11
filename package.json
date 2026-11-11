@@ -1,0 +1,30 @@
+{
+  "name": "cardiac-monitor-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cardiac Monitor patient app: pairs with the wearable ECG patch, shows rhythm status, and notifies the patient of possible atrial fibrillation.",
+  "scripts": {
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-native": "0.76.5",
+    "react-native-ble-plx": "3.4.0",
+    "@notifee/react-native": "9.1.3",
+    "react-native-encrypted-storage": "4.0.3",
+    "@react-navigation/native": "6.1.18",
+    "axios": "0.21.1",
+    "date-fns": "3.6.0",
+    "zod": "3.23.8",
+    "victory-native": "36.9.2"
+  },
+  "devDependencies": {
+    "jest": "29.7.0",
+    "@babel/preset-env": "7.26.0",
+    "eslint": "8.57.1"
+  },
+  "jest": { "testEnvironment": "node" },
+  "babel": { "presets": [["@babel/preset-env", { "targets": { "node": "current" } }]] }
+}
