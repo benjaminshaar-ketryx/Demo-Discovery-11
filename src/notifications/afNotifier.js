@@ -1,7 +1,7 @@
 // Software item: Patient notification service
 // Requirement: Notify patient of possible atrial fibrillation
 // Test: Verify AF notification is shown within 60 seconds
-const AF_NOTIFICATION_LATENCY_MS = 60 * 1000; // must match the AF requirement's latency target
+const AF_NOTIFICATION_LATENCY_MS = 30 * 1000; // must match the AF requirement's latency target
 
 function notificationDeadline(detectedAtMs) {
   return detectedAtMs + AF_NOTIFICATION_LATENCY_MS;
